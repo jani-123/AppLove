@@ -1,0 +1,87 @@
+
+
+            // var images = ["assets/images/img-1.jpg","assets/images/img-2.jpg",
+//               "assets/images/img-3.jpg","assets/images/img-4.jpg",
+//               "assets/images/img-5.jpg","assets/images/img-6.jpg",
+//               "assets/images/img-7.jpg","assets/images/img-8.jpg",
+//               "assets/images/img-9.jpg",];
+
+// for(var i = 0 ; i < images.length ; i++)
+// {  
+//    var secuencia = document.getElementById('seccionImg');
+//    var divPicture = document.createElement('div');
+//          divPicture.setAttribute('class','col-4 seccionImg');
+//    var picture = document.createElement('img');
+//        picture.setAttribute('class','images');
+//        picture.setAttribute('src', images[i]);
+//        picture.setAttribute('onclick','grandeImg(i)');
+//    var texto = document.createElement('p');
+//    var textoS = document.createTextNode("Nombre del Proyecto");
+//          texto.appendChild(textoS);
+//    divPicture.appendChild(picture);
+//    divPicture.appendChild(texto);
+//    secuencia.appendChild(divPicture);
+
+// }
+
+// function grandeImg()
+// {
+//    alert('entra');
+//    var grandeImg = document.getElementById('grande');
+//    var grande = document.createElement('div');
+//    var picture = document.createElement('img');
+//        picture.setAttribute('class','images');
+//        picture.setAttribute('src', images[i]);
+//    grande.appendChild(picture);
+//    grandeImg.appendChild(grande);
+// }
+
+
+<div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-1.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-2.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-3.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-4.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-5.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-6.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-7.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-8.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+                  <div class="col-4 seccionImg" id="divImg">
+                        <img src="assets/images/img-9.jpg" class="images">
+                        <p>Nombre del Proyecto</p>
+                  </div>
+
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_img
+
+var big = Array.from(document.getElementsByClassName('images'));
+for (var i = 0; i < big.length; i++) {
+      big.addEventListener('click',grande);
+}
+
+function grande(argument) {
+      alert('click');
+}
